@@ -5,6 +5,7 @@ const Detail=React.lazy(()=>import("@/views/detail"))
 const Entire=React.lazy(()=>import("@/views/entire"))
 
 
+
 const routes = [
     {
         path: '/',
@@ -22,6 +23,7 @@ const routes = [
         path: '/entire',
         element: <Entire />
     },
+   
 
 ]
 

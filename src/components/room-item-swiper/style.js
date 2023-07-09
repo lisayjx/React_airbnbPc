@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RoomItemWrapper = styled.div`
+export const RoomItemSwiperWrapper = styled.div`
   width: ${props => props.itemWidth};      //动态的
   padding: 8px;
   box-sizing: border-box;
@@ -72,5 +72,72 @@ export const RoomItemWrapper = styled.div`
  
   }
  
+
+ /* 轮播图 */
+ .swiper{
+  position: relative;
  
+    &:hover{
+     .control{
+       display: flex;
+     }
+   }
+
+  .control {
+    
+    position: absolute;
+    color: #fff;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    height: 100%;
+    width: 60px;
+    background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+  }
+  .leftBtn{
+    left: 0;
+  }
+  .rightBtn{
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+  }
+
+  //指示器
+  .indicator {
+      position: absolute;
+      z-index: 9;
+      width: 30%;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+      margin: 0 auto;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+  
+       
+
+        .dot {
+          width: 5px;
+          height:5px;
+          background-color: #fff;
+          border-radius: 50%;
+          
+
+          &.active {
+            width: 9px;
+          height: 9px;
+           background-color: #000;
+          }
+
+        }
+      }
+    }
+ }
 `

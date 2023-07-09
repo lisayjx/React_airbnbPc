@@ -28,3 +28,17 @@ export function getHotRecommend(){
     url:'/home/hotrecommenddest'
   })
 }
+
+// home页向往的城市数据
+export function getLongForData(){
+  return  YXRequest.get({
+    url:'/home/longfor'
+  })
+}
+
+// home页plus数据
+export function getPlusData(){
+  return  YXRequest.get({
+    url:'/home/plus'
+  })
+}

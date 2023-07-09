@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const ScrollViewWrapper = styled.div`
-
 position: relative;
+padding: 8px;
 
 .slot{
     overflow: hidden;
+  
 }
 .content{
     display: flex;
     white-space: nowrap;
+    transition: transform 0.5s ease;
 }
 .control{
     display: flex;
@@ -22,14 +24,19 @@ position: relative;
     width: 22px;
     cursor: pointer;
     z-index: 999;
-    top: 5px;
+   
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,.14);
 }
 .left{
     position: absolute;
-    left: -10px;
+    top: 50%;
+    left:  -20px;
+    transform: translateY(-50%);
 }
 .right{
     position: absolute;
-    right:-10px;
+    top:50%;
+    right: -20px;
+    transform: translateY(-50%);
 }
 `
