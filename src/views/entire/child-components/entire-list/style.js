@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const EntireListWrapper = styled.div`
   padding: 20px; 
   position: relative;
- 
+ margin-top: 120px;
 .room-list{
  
     display: flex;

@@ -49,8 +49,8 @@ const RoomItemSwiper = memo((props) => {
         <RoomItemSwiperWrapper
             verifyColor={itemData.verify_info.text_color || '#39576a'}
             itemWidth={itemWidth}
-            onClick={clickItemhandle}>
-            <div className="inner">
+            >
+            <div className="inner"  >
 
                 {/* <div className="cover">
                     <img src={itemData.picture_url} alt="" />
@@ -67,7 +67,7 @@ const RoomItemSwiper = memo((props) => {
                             {
                                itemData?.picture_urls?.map((item, index) => {
                                   return   (
-                                <div className='item' key={item}>
+                                <div className='item' key={item} >
                                     <span className={classNames("dot", {active: selectIndex === index})}></span>
                                 </div>
                                   )
@@ -80,7 +80,7 @@ const RoomItemSwiper = memo((props) => {
                         {
                             itemData?.picture_urls?.map((url, index) => {
                                 return (
-                                    <div className="cover" key={index}>
+                                    <div className="cover" key={index} onClick={clickItemhandle}>
                                         <img src={url} alt="" />
                                     </div>
                                 )

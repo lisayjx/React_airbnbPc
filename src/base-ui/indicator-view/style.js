@@ -9,10 +9,10 @@ export const IndicatorWrapper = styled.div`
    
     
 .i-content{
-
-    display: flex;
     position: relative;
 
+    display: flex;
+   
     > * {//指示器里面的直接子元素 不管什么类型
     flex-shrink: 0;
     flex-wrap: nowrap;

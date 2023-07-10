@@ -8,6 +8,7 @@ import HomeSectionV2 from './childComponents/home-section-v2'
 import { isEmptyObj } from '@/utils/is-empty-object'
 import HomeLongFor from './childComponents/home-longfor'
 import HomeSectionV3 from './childComponents/home-section-v3'
+import { changeHeaderConfigAction } from '@/store/modules/main'
 
 const Home = memo(() => {
   // 从redux里获取goodPrice数据  
@@ -28,6 +29,8 @@ const Home = memo(() => {
   useEffect(() => {
     dispatch(fetchHomeDataAction())
 
+    //  派发固定定位
+    dispatch(changeHeaderConfigAction({isFixed:true}))
   }, [dispatch])
 
 

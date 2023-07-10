@@ -11,22 +11,24 @@ import 'normalize.css'
 import './assets/css/index.less'
 import 'antd/dist/antd.less';
 import store from './store';
-import theme from '@/assets/theme' 
+import theme from '@/assets/theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <Suspense fallback="loading">
-    <Provider store={store}>
 
+  <Provider store={store}>
+
+    <Suspense fallback="loading">
       <ThemeProvider theme={theme}>
         <HashRouter>
           <App />
         </HashRouter>
       </ThemeProvider>
+    </Suspense>
+    
+  </Provider >
 
-    </Provider>
-  </Suspense>
 
 
   // </React.StrictMode>

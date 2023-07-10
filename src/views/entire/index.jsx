@@ -5,6 +5,7 @@ import EntireList from './child-components/entire-list'
 import EntirePagination from './child-components/entire-pagination'
 import { useDispatch } from 'react-redux'
 import {   fetchEntireDataAction } from '@/store/modules/entire'
+import { changeHeaderConfigAction } from '@/store/modules/main'
 
 const Entire = memo((props) => {
   const dispatch = useDispatch()
@@ -14,6 +15,8 @@ const Entire = memo((props) => {
   useEffect(() => {
     // 所有的网络请求都在这里
     dispatch(fetchEntireDataAction())
+     //  派发固定定位
+     dispatch(changeHeaderConfigAction({isFixed:true}))
   }, [dispatch])
   return (
     <EntireWrapper>
