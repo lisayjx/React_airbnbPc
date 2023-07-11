@@ -15,7 +15,7 @@ const Detail = memo((props) => {
   })
   useEffect(()=>{
      //  派发固定定位
-     dispatch(changeHeaderConfigAction({isFixed:false}))
+     dispatch(changeHeaderConfigAction({isFixed:false,isTopAlpha:false}))
   },[dispatch])
   return (
     <DetailWrapper>

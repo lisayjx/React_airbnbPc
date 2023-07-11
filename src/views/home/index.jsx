@@ -29,8 +29,8 @@ const Home = memo(() => {
   useEffect(() => {
     dispatch(fetchHomeDataAction())
 
-    //  派发固定定位
-    dispatch(changeHeaderConfigAction({isFixed:true}))
+    //  派发固定定位和顶部透明
+    dispatch(changeHeaderConfigAction({isFixed:true, isTopAlpha :true}))
   }, [dispatch])
 
 

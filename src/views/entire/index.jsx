@@ -16,7 +16,7 @@ const Entire = memo((props) => {
     // 所有的网络请求都在这里
     dispatch(fetchEntireDataAction())
      //  派发固定定位
-     dispatch(changeHeaderConfigAction({isFixed:true}))
+     dispatch(changeHeaderConfigAction({isFixed:true,isTopAlpha:false}))
   }, [dispatch])
   return (
     <EntireWrapper>

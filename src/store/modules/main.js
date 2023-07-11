@@ -4,7 +4,8 @@ const mainSlice = createSlice({
     name: 'main',
     initialState: {
         headerConfig: {
-            isFixed:false     //是否是固定定位
+            isFixed:false ,    //是否是固定定位
+            isTopAlpha:false  //是否透明
         }
     },
     reducers: {

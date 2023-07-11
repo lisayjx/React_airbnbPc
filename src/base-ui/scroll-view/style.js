@@ -23,7 +23,7 @@ padding: 8px;
     height: 22px;
     width: 22px;
     cursor: pointer;
-    z-index: 999;
+    z-index: 9;
    
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,.14);
 }

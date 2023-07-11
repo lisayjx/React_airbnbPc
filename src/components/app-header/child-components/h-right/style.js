@@ -15,6 +15,7 @@ justify-content: flex-end;
         padding:10px;
         border-radius: 22px;
         cursor: pointer;
+        /* color: ${props=>props.theme.isAlpha ? '#fff':'#000'}; */
         &:hover{
             background-color: #f5f5f5;
         }
